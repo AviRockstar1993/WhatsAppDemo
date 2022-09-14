@@ -4,7 +4,7 @@ import {Input, Button} from 'react-native-elements';
 import {auth} from '../firebase';
 import {createUserWithEmailAndPassword, updateProfile} from 'firebase/auth';
 
-const Register = () => {
+const Register = ({navigation}) => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -18,7 +18,7 @@ const Register = () => {
     }
   };
 
-  const register = ({navigation}) => {
+  const registerProfile = () => {
     createUserWithEmailAndPassword(auth, email, password)
       .then(userCredential => {
         // Registered
@@ -30,7 +30,7 @@ const Register = () => {
             : 'https://gravatar.com/avatar/94d45dbdba988afacf30d916e7aaad69?s=200&d=mp&r=x',
         })
           .then(() => {
-            () => navigation.navigate('LoginScreen');
+            navigation.navigate('LoginScreen');
             alert('Registered, please login.');
           })
           .catch(error => {
@@ -71,7 +71,11 @@ const Register = () => {
         value={avatar}
         onChangeText={text => setAvatar(text)}
       />
-      <Button title="register" onPress={register} style={styles.button} />
+      <Button
+        title="register"
+        onPress={registerProfile}
+        style={styles.button}
+      />
     </View>
   );
 };

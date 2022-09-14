@@ -19,7 +19,8 @@ const Chat = ({navigation}) => {
     signOut(auth)
       .then(() => {
         // Sign-out successful.
-        navigation.replace('Login');
+        navigation.replace('LoginScreen');
+        alert('Logout successfully');
       })
       .catch(error => {
         // An error happened.

@@ -1,0 +1,36 @@
+{
+    "translation": {
+      "hello":"Hello",
+      "this line is translated":"This line is translated",
+      "main":"Main",
+      "Product":"Product",
+      "Cart":"Cart",
+      "Login":"Login",
+      "SignUp":"SignUp",
+      "User":"User",
+      "Checkout":"Checkout",
+      "name":"Avishek Biswas",
+      "email":"avishek21@gmail.com",
+      "edit":"Edit Profile",
+      "orders":"Orders",
+      "Address":"Address",
+      "language":"Select Language",
+      "methods":"Payment Methods",
+      "logOut":"Log out",
+      "profile":"Profile",
+      "home":"Home Page",
+      "enter valid email":"Please enter valid email id",
+      "Alert email":"Email can't matched",
+      "password":"Password can't be empty",
+      "enter email":"Enter email",
+      "product_detail":"Product Detail",
+      "Price":"Price:",
+      "Add to Cart":"Add to Cart",
+      "Search Product":"Search Product",
+      "Cart Items":"Cart Items",
+      "noItems":"No Items in cart",
+      "Create account":"Create account"
+     
+      
+    }
+  }
